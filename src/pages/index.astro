@@ -11,6 +11,16 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1 style="margin-top: 60px">Astro</h1>
+		<div style="border: 2px red solid">
+			<flowise-fullchatbot></flowise-fullchatbot>
+		</div>
+		<script type="module">
+			import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+			Chatbot.initFull({
+				chatflowid: "e027fb71-3e13-4e4e-9fcf-fdd6d43ab852",
+				apiHost: "http://localhost:3000",
+			})
+		</script>
 	</body>
 </html>
