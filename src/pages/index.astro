@@ -24,14 +24,22 @@
 		</div>
 		<div>Have fun!</div>
 
-		<div style="border: 2px red solid">
-			<flowise-fullchatbot></flowise-fullchatbot>
+		<div style="display: flex; justify-content: center;">
+			<div style="border: 2px red solid">
+				<flowise-fullchatbot></flowise-fullchatbot>
+			</div>
 		</div>
 		<script type="module">
 			import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
 			Chatbot.initFull({
 				chatflowid: "e027fb71-3e13-4e4e-9fcf-fdd6d43ab852",
 				apiHost: "http://localhost:3000",
+				theme: {
+					chatWindow: {
+						width: 800,
+						height: 500,
+					}
+				}
 			})
 		</script>
 	</body>
