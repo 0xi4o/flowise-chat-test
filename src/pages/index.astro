@@ -24,26 +24,16 @@
 		</div>
 		<div>Have fun!</div>
 
-		<div style="display: flex; justify-content: center;">
-			<div style="border: 2px solid black">
-				<flowise-fullchatbot></flowise-fullchatbot>
-			</div>
-		</div>
 		<script type="module">
 			import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
 			// import Chatbot from "./web.js"
-			Chatbot.initFull({
-				// chatflowid: "edfb9f81-536d-4128-9d82-bcfd8eca95dc",
-				// chatflowid: "0ea23997-4b5a-464b-ad6c-9cac44170b74",
-                chatflowid: "b77e64a3-92ad-4009-92de-cda217e5f75d",
+			Chatbot.init({
+				// chatflowid: "5424a4dd-94f9-4586-a6ed-a53de1567eae",
+				chatflowid: "6881e28a-2f63-4625-82ad-0f2f0591a5e2",
+                // chatflowid: "1a985bf7-407a-4d85-a8c2-641f5005773b",
 				// apiHost: "http://localhost:3000",
-				apiHost: "https://flowise-main.up.railway.app",
-				theme: {
-					chatWindow: {
-						width: 800,
-						height: 1600,
-					}
-				}
+				// apiHost: "https://flowise-main.up.railway.app",
+				apiHost: "https://flowise-ui-cwc5.onrender.com",
 			})
 		</script>
 	</body>
